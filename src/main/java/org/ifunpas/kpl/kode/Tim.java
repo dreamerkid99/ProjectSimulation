@@ -30,4 +30,14 @@ public class Tim {
 	public void setPemainInti(List<Pemain> pemainInti) {
 		this.pemainInti = pemainInti;
 	}
+	
+	public boolean tambahPemainInti(Pemain pemain) {
+		if(pemainInti.size() < 11) {
+			System.out.println(pemain.getNama() + " berhasi; ditambahkan sebagai pemain inti.");
+			return true;
+		} else {
+			System.out.println(pemain.getNama() + " tidak berhasil ditambahkan sebagai pemain inti.");
+			return false;
+		}
+	}
 }
